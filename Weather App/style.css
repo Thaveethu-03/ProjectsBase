@@ -1,0 +1,145 @@
+*{
+    font-family: sans-serif;
+    color: white;
+}
+body{
+    background-color: #010101;
+}
+.card-container{
+    perspective: 1000px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 100vh;  
+}
+.card{
+    width:90%;
+    max-width: 370px;
+    height: auto;
+    background: linear-gradient(to bottom, #2d5170, #06bbc5);
+    padding: 40px 35px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d; /* Enables 3D effects */
+    transition: transform 0.1s ease-out;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.search input{
+    height:40px;
+    padding: 0px 30px 0px 30px;
+    margin-right: 15px;
+    flex: 1;
+    outline: none;
+    border: 0px;
+    border-radius: 20px;
+    color: #555;
+    font-size: 18px;
+}
+.searchbtn{
+    cursor:pointer;
+    outline: none;
+    border: 0px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+}
+.searchbtn:active{
+    transform:translateY(3px);
+}
+.searchbtn i{
+    color: #555;
+    font-size: 18px;
+}
+.weather{
+    display: none;
+    text-align: center;
+}
+.weather-Details{
+    margin-top: 25px;
+}
+.weather-Details img{
+    height:180px;
+}
+.weather-Details h1{
+    font-size: 60px;
+    font-weight: 500;
+    margin-top: -10px;
+}
+.weather-Details h2{
+    font-size: 35px;
+    font-weight: 100;
+    margin-top: -20px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.col{
+    display:flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    margin-right: 10px;
+    height: 65px;
+}
+.val{
+    margin-top: -10px;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+.error{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2em;
+    display: none;
+}
+
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .card-container{
+        zoom: 0.8;
+    }
+    .weather-Details h1{
+        margin-top: 5px;
+    }
+    .card{
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container{
+        zoom: 0.7;
+    }
+    .weather-Details h1{
+        margin-top: 8px;
+    }
+    .card{
+        margin-top: 250px;
+    }
+}
+
+@media (max-width: 320px) {
+    .card-container{
+        zoom: 0.55;
+    }
+    .weather-Details h1{
+        margin-top: 15px;
+    }
+    .card{
+        margin-top: 500px;
+    }
+}
