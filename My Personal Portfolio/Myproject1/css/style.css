@@ -1,0 +1,57 @@
+*{
+  box-sizing:border-box;
+}
+body{
+  background-position:center;
+  background-image:linear-gradient(112deg,rgba(120,129,97,0.6),rgba(29, 77, 153,0.8)),url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size:cover;
+  font-size:1.25em;
+  font-family:"Monospace",sans-serif;
+  color:white;
+  line-height:1.5;
+}
+input::placeholder {
+  color: red;
+}
+section{
+  border:20px solid rgba(71, 67, 67,0.3);
+}
+.container{
+  background:rgba(71, 67, 67,0.8);;
+  border:7px solid rgba(71, 67, 67,0.2);
+  display:block;
+  margin-right:auto;
+  margin-left:auto;
+  padding-left:50px;
+  padding-top:20px;
+  border-radius:2%;
+  width:100%;
+  max-width:800px;
+}
+input[type=checkbox]{
+  width:10%;
+}
+input[type=radio]{
+  width:10%;
+}
+input,select,textarea{
+  width:90%;
+  padding:3px 3px 3px 3px;
+  margin:5px 5px;
+  border:10px solid whitesmoke;
+  border-radius:2px;
+  display:inline-block;
+  line-height:1.6;
+}
+button{
+  cursor:pointer;
+  background:lightgreen;
+  color:ghostwhite;
+  font-size:1.25em;
+  text-align:center;
+  border:2px solid black;
+  border-radius:10px;
+  margin:30px 100px;
+  padding:10px 10px;
+  width:20%;
+}
