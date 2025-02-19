@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thaveethu portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/fav-icon1.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6fb69cefc0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="header">
+                     
+        <nav class="navbar flex">
+            <div class="navbar_logo">
+                <a href="#" class="nav_logo">Thaveethu Arockia Kein</a>
+            </div>
+
+            <div class="nav_menu" id="nav_menu">
+                  
+                <ul class="nav_list">
+
+                    <li class="nav_items">
+                        <a href="#about" class="nav_link active">About</a>
+                    </li>
+
+                    <li class="nav_items">
+                        <a href="#projects" class="nav_link active">Projects</a>
+                    </li>
+
+                    <li class="nav_items">
+                        <a href="#contact" class="nav_link active">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="nav_toggle" id="nav_toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+                  
+        </nav>
+
+   </header>
+
+   <main class="main">
+
+        <section class="home flex">
+            
+            <div class="home_data">
+
+                <div>
+                    <h3 class="profession">Software Developer</h3>
+                </div>
+
+                <div>
+                    <h1 class="name">Hello, My Name is Thaveethu Arockia Kein S</h1>
+                </div>
+                
+                <div>
+                    <h2 class="section_content">An aspiring developer skilled in Java, HTML, CSS, JavaScript and React. Passionate about building innovative solutions and creating web applications and backend systems.</h2>
+                </div>
+
+                <div class="home_btns">
+                    <button class="project_btn"> <a href="#projects">Projects</a> </button>
+                    <button class="linkedIn_btn"><a href="https://www.linkedin.com/in/thaveethukeins03/" target="_blank">LinkedIn</a></button>
+                </div>
+
+            </div>
+
+            <div class="home_img">
+                <img src="images/thaveethu_edit_1.png" class="my_img1">
+            </div>
+            
+            
+        </section>
+
+        <section class="projects" id="projects">
+
+            <div class="projects-container">
+
+                <h3 class="section-heading">Projects</h3>
+
+                <div class="project_cards">
+
+                    <div class="card">
+
+                        <div class="card-container">
+                            <div class="card-aligner">
+                                <div class="card-content">
+                                    <h1 class="cd-heading">Weather Card</h1>
+                                    <h1 class="cd-explanation">Developed a responsive front-end web page for a  weather application using HTML, CSS, and JavaScript.</h1>
+                                    <button class="cd-button"> <a href="https://thaveethu-03.github.io/ProjectsBase/Weather%20App/index.html" target="_blank">View Project</a> </button>
+                                </div>
+                                <div class="card-img">
+                                    <img src="images/weather-card.png" alt="weather-card Image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-container">
+                            <div class="card-aligner">
+                                <div class="card-content">
+                                    <h1 class="cd-heading">Bus Ticket Reservation</h1>
+                                    <h1 class="cd-explanation">Developed a Bus Ticket Reservation System using Java, JDBC and MySQL for backend functionality.</h1>
+                                    <button class="cd-button"> <a href="https://github.com/Thaveethu-03/ProjectsBase/tree/main/Bus%20Ticket%20Reservations" target="_blank">View Project</a> </button>
+                                </div>
+                                <div class="card-img">
+                                    <img src="images/BusTicket.png" alt="Bus-Ticket Image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-container">
+                            <div class="card-aligner">
+                                <div class="card-content">
+                                    <h1 class="cd-heading">Gaming HUB</h1>
+                                    <h1 class="cd-explanation">I created this personal project in order to show how to create an interface in web using a portfolio as an example.</h1>
+                                    <button class="cd-button"> <a href="#projects">View Project</a> </button>
+                                </div>
+                                <div class="card-img">
+                                    <img src="images/Gaming-hub.png" alt="Gaming-hub">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="about" id="about">
+
+            <div class="about-container flex">
+                
+                <div class="about-content">
+
+                    <h1 class="about-heading">About me</h1>
+                    
+                    <h2 class="about-description">I am a dedicated aspiring software engineer with a strong foundation in programming and development. Skilled in Java, HTML, CSS, JavaScript, React I am passionate about problem-solving and improving skills to contribute effectively.</h2>
+                    
+                    <div>
+                        <button class="about-btn"> <a href="files/David's Resume.pdf" download="Thaveethu Resume" target="_blank">Resume</a> </button>
+                    </div>
+
+                </div>
+
+                <div class="about-img">
+                    
+                    <img src="images/Thaveethu_img.png" alt="Thaveethu Image">
+                
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact">
+
+            <div class="contact-container">
+
+                <h3 class="section-heading">Contact</h3>
+
+                <div class="form-content">
+
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact_form">
+
+                        <input type="hidden" name="access_key" value="166153d7-18c9-433f-8439-0192a5e2f740">
+
+                        <label for="name" class="contact-font">Name</label><br>
+                        <input type="text" name="name" id="name" class="input-field contact-font" required><br>
+                        
+                        <label for="mail" class="contact-font">Email</label><br>
+                        <input type="mail" name="email" id="mail" class="input-field contact-font" required><br>
+
+                        <label for="message" class="contact-font">Message</label><br>
+                        <textarea name="message" id="message" cols="0" rows="10" class="input-field message contact-font" required></textarea><br>
+
+                        <button type="submit" class="contact-btn">Send</button>
+
+                        <input type="hidden" name="redirect" value=""> 
+
+                   </form>
+
+                </div>
+
+
+            </div>
+            
+        </section>
+
+   </main>
+
+   <footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-socials">
+
+          <a href="https://www.instagram.com/_itz_mee_david_/" target="_blank" class="footer-icon"> <i class="fa-brands fa-instagram"></i> </a>
+          <a href="https://www.linkedin.com/in/thaveethukeins03/" target="_blank" class="footer-icon"> <i class="fa-brands fa-linkedin"></i> </a>
+          <a href="mailto:thavithukein@gmail.com" target="_blank" class="footer-icon"> <i class="fa-solid fa-envelope"></i> </a>
+
+        </div>
+        
+        <h1 class="footer-copyright">&copy; S Thaveethu Arockia Kein 2024</h1>
+
+    </div>
+
+    <div class="footer-img">
+        <img src="images/footer-Image.png" alt="footer-Image">
+    </div>
+
+   </footer>
+
+   <script src="script.js"></script>
+</body>
+</html>
