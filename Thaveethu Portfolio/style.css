@@ -1,0 +1,195 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Poppins, sans-serif;
+}
+
+html, body{
+  overflow-x:hidden;
+}
+
+body{
+  background:#f5f7fa;
+  color:#333;
+}
+
+
+.container{
+  width:100%;
+  max-width:1100px;
+  margin:auto;
+  padding:0 15px;
+}
+
+
+header{
+  background:#0f172a;
+  color:white;
+  padding:20px 0;
+}
+
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:30px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+}
+
+nav a:hover{
+  color:#00bfff;
+}
+
+
+.menu-toggle{
+  display:none;
+  font-size:28px;
+  cursor:pointer;
+}
+
+
+.hero{
+  min-height:90vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#111827;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+.hero h1{
+  font-size:48px;
+}
+
+
+.buttons{
+  margin-top:20px;
+}
+
+.btn, .btn-outline, .btn-inline{
+  border:2px solid white;
+  padding:10px 20px;
+  margin:5px;
+  color:white;
+  text-decoration:none;
+  border-radius:5px;
+  display:inline-block;
+}
+
+
+section{
+  padding:80px 0;
+}
+
+h2{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+
+.skills-grid, .project-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.skill-card, .project-card{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+
+.links a{
+  margin:10px;
+  color:#2563eb;
+}
+
+.container {
+  
+  text-align: center;
+}
+
+
+footer{
+  background:#0f172a;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+
+.hidden{
+  opacity:0;
+  transform:translateY(30px);
+  transition:0.6s;
+}
+
+.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+
+@media(max-width:768px){
+
+  .menu-toggle{
+    display:block;
+  }
+
+ 
+  #nav-menu{
+    display:none;
+    width:100%;
+    position:absolute;
+    top:70px;
+    left:0;
+    background:#0f172a;
+    padding:20px 0;
+  }
+
+  #nav-menu.active{
+    display:block;
+  }
+
+  nav ul{
+    flex-direction:column;
+    text-align:center;
+    gap:15px;
+  }
+
+  .hero{
+    min-height:auto;
+    padding:60px 15px;
+  }
+
+  .hero h1{
+    font-size:26px;
+  }
+
+  .buttons{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .btn, .btn-outline, .btn-inline{
+    width:90%;
+    max-width:300px;
+    text-align:center;
+  }
+}
